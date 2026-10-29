@@ -219,6 +219,15 @@ function statusChipHtml(st, t) {
   return '';
 }
 
+function refTarget(t, ref) {
+  if (!ref || !ref.tab) return null;
+  const tab = t.tabs.find(x => x.id === ref.tab);
+  if (!tab) return null;
+  const sec = tab.sections && tab.sections[ref.section];
+  if (!sec) return null;
+  return { tabName: tab.name, title: sec.title || tab.name };
+}
+
 /* ---- day view ---- */
 function renderDay(t, st) {
   const idx = Math.min(S.view.idx, t.days.length - 1);
@@ -244,11 +253,14 @@ function renderDay(t, st) {
   if (!entries.length) html += `<p class="empty">呢日仲未有行程項目${edit ? ' — 加啲乜好？' : ''}</p>`;
   for (const e of entries) {
     const ei = day.entries.indexOf(e);
+    const ref = refTarget(t, e.ref);
     html += `<div class="entry">
       <div class="time">${esc(e.time || '')}</div>
-      <div>
+      ${e.img ? `<div class="thumb"><img src="${esc(e.img)}" alt="" loading="lazy" decoding="async"></div>` : `<div class="thumb none"></div>`}
+      <div class="body">
         <div class="activity">${linkify(e.activity || '')}</div>
         ${e.remark ? `<div class="remark">${linkify(e.remark)}</div>` : ''}
+        ${ref ? `<button class="ref-link" data-act="goto-ref" data-tab="${esc(e.ref.tab)}" data-sec="${e.ref.section}">▸ ${esc(ref.tabName)}資料</button>` : ''}
         ${edit ? `<div class="tools">
           <button class="tool-btn" data-act="edit-entry" data-idx="${ei}">編輯</button>
           <button class="tool-btn danger" data-act="del-entry" data-idx="${ei}">刪除</button>
@@ -268,7 +280,7 @@ function renderTab(t) {
   const edit = isUnlocked();
   let html = '';
   (tab.sections || []).forEach((sec, si) => {
-    html += `<div class="section">`;
+    html += `<div class="section" id="sec-${si}">`;
     if (sec.title) html += `<div class="section-title">${esc(sec.title)}</div>`;
     else html += `<div class="section-title dark">${esc(tab.name)}</div>`;
     (sec.rows || []).forEach((row, ri) => {
@@ -354,10 +366,15 @@ function openSettings() {
 function openEntryEditor(ei) {
   const day = currentTrip().days[S.view.idx];
   const e = ei >= 0 ? day.entries[ei] : { time: '', activity: '', remark: '' };
+  const foodTab = currentTrip().tabs[0];
+  const refOpts = ['<option value="">— 無 —</option>'].concat((foodTab ? foodTab.sections : []).map((s, i) =>
+    `<option value="${i}" ${e.ref && e.ref.tab === foodTab.id && e.ref.section === i ? 'selected' : ''}>${esc((s.title || foodTab.name).slice(0, 42))}</option>`)).join('');
   openModal(`<h2>${ei >= 0 ? '編輯行程項目' : '新增行程項目'}</h2>
     <div class="field"><label>時間 (HH:MM)</label><input type="text" id="f-time" value="${esc(e.time)}" placeholder="20:00"></div>
     <div class="field"><label>活動</label><input type="text" id="f-act" value="${esc(e.activity)}" placeholder="晚餐 (3間餐廳選1): ..."></div>
     <div class="field"><label>備註</label><textarea id="f-rem" placeholder="營業時間/交通/預約提示...">${esc(e.remark)}</textarea></div>
+    <div class="field"><label>圖片網址 (img/… 或 https://…)</label><input type="text" id="f-img" value="${esc(e.img || '')}" placeholder="img/ukokkei.jpg"></div>
+    ${foodTab ? `<div class="field"><label>連去${esc(foodTab.name)}邊一節</label><select id="f-ref">${refOpts}</select></div>` : ''}
     <div class="modal-actions">
       <button class="btn" data-act="close">取消</button>
       <button class="btn primary" data-act="save-entry" data-idx="${ei}">儲存</button>
@@ -408,6 +425,10 @@ function saveEntry(ei) {
     activity: val('#f-act').trim(),
     remark: val('#f-rem').trim(),
   };
+  const img = val('#f-img').trim();
+  if (img) entry.img = img;
+  const refSec = val('#f-ref').trim();
+  if (refSec !== '' && currentTrip().tabs[0]) entry.ref = { tab: currentTrip().tabs[0].id, section: +refSec };
   if (!entry.activity) { toast('活動欄唔可以空'); return; }
   if (ei >= 0) day.entries[ei] = entry; else day.entries.push(entry);
   day.entries.sort((a, b) => (a.time || '').localeCompare(b.time || ''));
@@ -560,6 +581,18 @@ function onClick(e) {
     case 'lock': closeModal(); lock(); break;
     case 'view-day': S.view = defaultView(); render(); break;
     case 'view-tab': S.view = { type: 'tab', id: el.dataset.tab }; render(); break;
+    case 'goto-ref': {
+      S.view = { type: 'tab', id: el.dataset.tab };
+      render();
+      const secEl = document.getElementById('sec-' + el.dataset.sec);
+      if (secEl) {
+        secEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        secEl.classList.remove('flash');
+        void secEl.offsetWidth;
+        secEl.classList.add('flash');
+      }
+      break;
+    }
     case 'pick-day': S.view = { type: 'day', idx: +el.dataset.idx }; render(); break;
     case 'add-entry': openEntryEditor(-1); break;
     case 'edit-entry': openEntryEditor(+el.dataset.idx); break;
