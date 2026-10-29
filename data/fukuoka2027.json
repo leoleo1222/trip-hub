@@ -14,44 +14,37 @@
     {
      "time": "11:00",
      "activity": "UO668 香港→福岡 11:00起飛",
-     "remark": "假設航班 (2026年冬季時間表); 2027年3月時刻未公佈, 訂票時再確認",
-     "img": "img/v_airplane.jpg"
+     "remark": "假設航班 (2026年冬季時間表); 2027年3月時刻未公佈, 訂票時再確認"
     },
     {
      "time": "15:00",
      "activity": "抵達福岡機場 FUK 15:10",
-     "remark": "入境+攞行李 ~60分鐘",
-     "img": "img/v_airport.jpg"
+     "remark": "入境+攞行李 ~60分鐘"
     },
     {
      "time": "16:00",
      "activity": "地鐵機場線→天神 (~11分鐘)",
-     "remark": "機場→博多5分→天神6分; 車費約¥230; 的士~20分鐘",
-     "img": "img/v_subway.jpg"
+     "remark": "機場→博多5分→天神6分; 車費約¥230; 的士~20分鐘"
     },
     {
      "time": "17:00",
      "activity": "酒店 check-in + 放低嘢",
-     "remark": "唔使休息太耐, 落街開始玩",
-     "img": "img/v_hotel.jpg"
+     "remark": "唔使休息太耐, 落街開始玩"
     },
     {
      "time": "18:00",
      "activity": "散步去中洲 (~15分鐘)",
-     "remark": "沿那珂川行, 順路睇屋台開檔",
-     "img": "img/v_nakasu.jpg"
+     "remark": "沿那珂川行, 順路睇屋台開檔"
     },
     {
      "time": "19:00",
      "activity": "中洲屋台體驗 + 那珂川夜景",
-     "remark": "屋台~18:00開檔; 同老闆同檔客人吹水; 每檔只坐10人左右",
-     "img": "img/v_yatai.jpg"
+     "remark": "屋台~18:00開檔; 同老闆同檔客人吹水; 每檔只坐10人左右"
     },
     {
      "time": "19:30",
      "activity": "一蘭本社總本店外等表演 (19:45到位)",
      "remark": "20:00-20:15 總店限定舞蹈表演 (門外/對面睇就得); 免費",
-     "img": "img/ichiran.jpg",
      "ref": {
       "tab": "food",
       "section": 0
@@ -61,7 +54,6 @@
      "time": "20:00",
      "activity": "晚餐 (3間餐廳選1): 烏骨鶏龍/Maruya西中洲/中洲鷹勝",
      "remark": "【首選】烏骨鶏ラーメン龍 (一蘭總店120m, 表演完20:15入座); 後備: らーめん一竜/辛麺屋桝元; 詳見餐廳資料tab",
-     "img": "img/ukokkei.jpg",
      "ref": {
       "tab": "food",
       "section": 0
@@ -70,20 +62,17 @@
     {
      "time": "21:30",
      "activity": "散步: 中洲夏祭り通り/屋台街外觀 (晚餐區內)",
-     "remark": "晚餐後唔使搭車; 中洲圈夜遊; 3月頭仲有櫻花燈飾",
-     "img": "img/v_nakasu_night.jpg"
+     "remark": "晚餐後唔使搭車; 中洲圈夜遊; 3月頭仲有櫻花燈飾"
     },
     {
      "time": "22:00",
      "activity": "那珂川夜景: 中洲橋→東中洲 [最好景放最後]",
-     "remark": "望中洲霓虹+川面倒影; 免費; 影相位多; BAR喺西中洲對岸順路",
-     "img": "img/v_nakasu_night.jpg"
+     "remark": "望中洲霓虹+川面倒影; 免費; 影相位多; BAR喺西中洲對岸順路"
     },
     {
      "time": "23:00",
      "activity": "酒吧: BAR ヤモリ (西中洲)",
      "remark": "窓側全席リバービュー中洲夜景; ~¥3,000; 至3am; 中洲川端站4分; 詳見餐廳資料",
-     "img": "img/yamori.jpg",
      "ref": {
       "tab": "food",
       "section": 16
@@ -92,8 +81,7 @@
     {
      "time": "23:30",
      "activity": "返酒店 (步行~10分鐘)",
-     "remark": "BAR喺西中洲, 過橋行返天神/中洲圈; 夜晚街道多人安全; 短程的士起錶~¥800",
-     "img": "img/v_street_night.jpg"
+     "remark": "BAR喺西中洲, 過橋行返天神/中洲圈; 夜晚街道多人安全; 短程的士起錶~¥800"
     }
    ]
   },
@@ -105,7 +93,6 @@
      "time": "07:00",
      "activity": "早餐 (3間餐廳選1): まるうま/やりうどん/駅弁",
      "remark": "【首選】まるうま 博多站月台立食 (07:00開, 朝ラー¥520); 詳見餐廳資料",
-     "img": "img/maruuma.jpg",
      "ref": {
       "tab": "food",
       "section": 1
@@ -114,32 +101,27 @@
     {
      "time": "08:30",
      "activity": "博多站集合",
-     "remark": "預留時間搵月台 + 影相 (由布院之森係墨綠色靚車)",
-     "img": "img/v_hakata_sta.jpg"
+     "remark": "預留時間搵月台 + 影相 (由布院之森係墨綠色靚車)"
     },
     {
      "time": "09:00",
      "activity": "特急『由布院之森』09:17出發",
-     "remark": "全車指定席: 提早約1個月上JR九州官網預約 (3人一起訂); 車程~2小時15分; 單程約¥5,000-6,000",
-     "img": "img/v_yufuin_train.jpg"
+     "remark": "全車指定席: 提早約1個月上JR九州官網預約 (3人一起訂); 車程~2小時15分; 單程約¥5,000-6,000"
     },
     {
      "time": "11:30",
      "activity": "11:31抵達由布院站 → 湯之坪街道",
-     "remark": "站前由布見通望由布岳; 全程步行 (站→街道→湖 ~1.5km)",
-     "img": "img/v_yufuin.jpg"
+     "remark": "站前由布見通望由布岳; 全程步行 (站→街道→湖 ~1.5km)"
     },
     {
      "time": "12:00",
      "activity": "湯之坪街道 邊行邊食",
-     "remark": "B-speak蛋糕卷/金賞可樂餅/Snoopy茶屋/COMICO美術館; 手作店+雜貨",
-     "img": "img/v_yufuin_street.jpg"
+     "remark": "B-speak蛋糕卷/金賞可樂餅/Snoopy茶屋/COMICO美術館; 手作店+雜貨"
     },
     {
      "time": "13:00",
      "activity": "由布院午餐 (3間餐廳選1): YUFUYA/かっぱ食堂/咲咲亭",
      "remark": "【首選】YUFUYA和牛燒肉; 湯之坪街道內; 詳見餐廳資料; 金賞可樂餅/B-speak邊行邊食",
-     "img": "img/yufuya.jpg",
      "ref": {
       "tab": "food",
       "section": 2
@@ -148,14 +130,12 @@
     {
      "time": "14:00",
      "activity": "金鱗湖 + 天祖神社 [景]",
-     "remark": "湖畔一圈15-20分鐘; 湖邊cafe休息; 免費",
-     "img": "img/v_kinrin.jpg"
+     "remark": "湖畔一圈15-20分鐘; 湖邊cafe休息; 免費"
     },
     {
      "time": "15:00",
      "activity": "由布院溫泉體驗 (3選1): 由布の里",
      "remark": "站前3分鐘, 內湯/露天/沙拿/岩盤浴, ¥540, 7:00-21:00 — 啱晒15:56班次; 3選1: 由布の里/乙丸温泉館(地道共同浴場¥300)/ゆのつぼ温泉(街道內¥200); Floral Village站前順路影相; 注意: 由布院冇齊晒冷泉/電氣/藥湯嘅都市大浴場, 由布の里浴種最多元; 自帶毛巾(或現場租)",
-     "img": "img/v_onsen.jpg",
      "ref": {
       "tab": "food",
       "section": 15
@@ -164,44 +144,37 @@
     {
      "time": "15:30",
      "activity": "買手信 → 由布院站",
-     "remark": "B-speak/由布院焙煎珈琲等; 預留時間上車",
-     "img": "img/v_wagashi.jpg"
+     "remark": "B-speak/由布院焙煎珈琲等; 預留時間上車"
     },
     {
      "time": "16:00",
      "activity": "由布院出發返程 (示例15:56班次)",
-     "remark": "15:56發→18:10着; 回程同樣預先劃位 (一日約3班, 唔好遲); 車程2小時15分, 車上唞返陣",
-     "img": "img/v_yufuin_train.jpg"
+     "remark": "15:56發→18:10着; 回程同樣預先劃位 (一日約3班, 唔好遲); 車程2小時15分, 車上唞返陣"
     },
     {
      "time": "18:00",
      "activity": "18:10返到博多站",
-     "remark": "地鐵返天神 (~11分鐘)",
-     "img": "img/v_hakata_sta.jpg"
+     "remark": "地鐵返天神 (~11分鐘)"
     },
     {
      "time": "18:30",
      "activity": "博多站→地鐵天神 → 天神地下街 (唔返酒店)",
-     "remark": "全程唔返酒店; 地下街~20:00閉",
-     "img": "img/v_tenjin_u.jpg"
+     "remark": "全程唔返酒店; 地下街~20:00閉"
     },
     {
      "time": "19:00",
      "activity": "ミーナ天神 快閃",
-     "remark": "B1F/8F至22:00 (1F-6F至20:00); 唔夠行就Day 4下晝再嚟",
-     "img": "img/v_tenjin.jpg"
+     "remark": "B1F/8F至22:00 (1F-6F至20:00); 唔夠行就Day 4下晝再嚟"
     },
     {
      "time": "19:30",
      "activity": "地鐵去薬院 (天神南1站)",
-     "remark": "晚餐店喺薬院站324m",
-     "img": "img/v_subway.jpg"
+     "remark": "晚餐店喺薬院站324m"
     },
     {
      "time": "20:00",
      "activity": "爐端燒 (3間餐廳選1): Fishman/稚加榮/Homura",
      "remark": "【首選】Fishman (No.10, ¥5-6k, 薬院); 稚加榮=想豪一次(No.32, ¥10k+); 詳見餐廳資料",
-     "img": "img/fishman.jpg",
      "ref": {
       "tab": "food",
       "section": 3
@@ -210,20 +183,17 @@
     {
      "time": "21:30",
      "activity": "散步: 住吉神社 夜間參拜 (晚餐區: 薬院/大橋)",
-     "remark": "水の宮; 參道24小時開放; 薬院步行~15分鐘; 免費",
-     "img": "img/v_sumiyoshi.jpg"
+     "remark": "水の宮; 參道24小時開放; 薬院步行~15分鐘; 免費"
     },
     {
      "time": "22:00",
      "activity": "春吉橋/國体通り夜景 (住吉→春吉方向) [最好景放最後]",
-     "remark": "春吉橋望那珂川水+夜景; 之後地鐵渡邊路站→天神酒吧",
-     "img": "img/v_haruyoshi.jpg"
+     "remark": "春吉橋望那珂川水+夜景; 之後地鐵渡邊路站→天神酒吧"
     },
     {
      "time": "23:00",
      "activity": "酒吧: トロ壱 天神店",
      "remark": "日本酒放題¥748起; 至翌5am; 天神; 詳見餐廳資料",
-     "img": "img/toroichi.jpg",
      "ref": {
       "tab": "food",
       "section": 16
@@ -232,8 +202,7 @@
     {
      "time": "23:30",
      "activity": "返酒店 (步行)",
-     "remark": "トロ壱喺天神中心; 酒店步行圈內; 想續攤居酒屋隨時",
-     "img": "img/v_street_night.jpg"
+     "remark": "トロ壱喺天神中心; 酒店步行圈內; 想續攤居酒屋隨時"
     }
    ]
   },
@@ -245,7 +214,6 @@
      "time": "09:00",
      "activity": "早餐 (3間餐廳選1): 長浜家/はかたや/やりうどん",
      "remark": "【首選】元祖ラーメン長浜家 (24h, ¥550, 朝ラー文化); 詳見餐廳資料",
-     "img": "img/nagahamaya.jpg",
      "ref": {
       "tab": "food",
       "section": 4
@@ -254,14 +222,12 @@
     {
      "time": "09:30",
      "activity": "櫛田神社 + 川端通商店街 [上晝: 寺廟巡り①]",
-     "remark": "櫛田神社24小時參拜; 有蓋商店街落雨都OK; 山笠展示",
-     "img": "img/v_kushida.jpg"
+     "remark": "櫛田神社24小時參拜; 有蓋商店街落雨都OK; 山笠展示"
     },
     {
      "time": "11:30",
      "activity": "午餐 (3間餐廳選1): Umakatai/海之路/丸秀",
      "remark": "【首選】魷魚活造Umakatai天神店 (No.48); 海之路=No.46海鮮郷土料理; 後備: 明太子料理 ふくや中洲本店(9:00-22:00); 詳見餐廳資料",
-     "img": "img/umakatai.jpg",
      "ref": {
       "tab": "food",
       "section": 5
@@ -270,50 +236,42 @@
     {
      "time": "13:30",
      "activity": "東長寺 (博多大佛) [寺廟巡り②]",
-     "remark": "免費 09:00-17:00; 日本最大級木造坐佛; 千年六角堂",
-     "img": "img/v_tochoji.jpg"
+     "remark": "免費 09:00-17:00; 日本最大級木造坐佛; 千年六角堂"
     },
     {
      "time": "14:00",
      "activity": "聖福寺 [寺廟巡り③]",
-     "remark": "日本第一座禪寺(1195年); 08:00-17:00免費; 祇園站5分鐘; 外圍參觀已夠睇",
-     "img": "img/v_shofukuji.jpg"
+     "remark": "日本第一座禪寺(1195年); 08:00-17:00免費; 祇園站5分鐘; 外圍參觀已夠睇"
     },
     {
      "time": "14:30",
      "activity": "崇福寺 [寺廟巡り④]",
-     "remark": "福州系中式唐寺(1629); 05:00-21:00 (本堂至16:00); 東長寺步行~10分鐘",
-     "img": "img/v_sofukuji.jpg"
+     "remark": "福州系中式唐寺(1629); 05:00-21:00 (本堂至16:00); 東長寺步行~10分鐘"
     },
     {
      "time": "15:30",
      "activity": "博多運河城",
-     "remark": "運河show整點; 4間寺社全部喺舊市街步行圈內, 唔使搭車",
-     "img": "img/v_canalcity.jpg"
+     "remark": "運河show整點; 4間寺社全部喺舊市街步行圈內, 唔使搭車"
     },
     {
      "time": "17:00",
      "activity": "自由時間: 運河城/博多站百貨",
-     "remark": "繼續行/免稅/手信",
-     "img": "img/v_canalcity.jpg"
+     "remark": "繼續行/免稅/手信"
     },
     {
      "time": "18:00",
      "activity": "呑兵衛町居酒屋街散步 (舊市街)",
-     "remark": "福岡地道居酒屋街; 傍晚開始熱鬧; 免費望",
-     "img": "img/v_izakaya_alley.jpg"
+     "remark": "福岡地道居酒屋街; 傍晚開始熱鬧; 免費望"
     },
     {
      "time": "19:00",
      "activity": "慢慢行去晚餐店 (祇園/博多站圈)",
-     "remark": "徳永屋=祇園; 一藤/前田屋=博多站; 地鐵1站內",
-     "img": "img/v_hakata_st.jpg"
+     "remark": "徳永屋=祇園; 一藤/前田屋=博多站; 地鐵1站內"
     },
     {
      "time": "20:00",
      "activity": "牛雜鍋 (3間餐廳選1): 徳永屋/一藤/前田屋 + 轉口味: 水炊き",
      "remark": "【首選】徳永屋總本店 (No.3, 祇園; 逢星期二休, D3係三OK); 轉口味→水炊き(雞湯鍋): 濱田屋Kuten(No.22)/水炊善哉(No.50)/鳥善西中洲別館(No.57) — 全部榜內; 詳見餐廳資料",
-     "img": "img/tokunagaya.jpg",
      "ref": {
       "tab": "food",
       "section": 6
@@ -322,20 +280,17 @@
     {
      "time": "21:30",
      "activity": "散步: キャナルシティ博多 (中洲步行5分)",
-     "remark": "運河噴水show至22:00; 餐廳至23:00; 博多座外觀夜景",
-     "img": "img/v_canalcity.jpg"
+     "remark": "運河噴水show至22:00; 餐廳至23:00; 博多座外觀夜景"
     },
     {
      "time": "22:00",
      "activity": "那珂川夜景: 中洲川端→西中洲 [最好景放最後]",
-     "remark": "祇園/中洲圈內行唔使搭車; 影中洲霓虹",
-     "img": "img/v_nakasu_night.jpg"
+     "remark": "祇園/中洲圈內行唔使搭車; 影中洲霓虹"
     },
     {
      "time": "23:00",
      "activity": "酒吧: T6O (春吉橋)",
      "remark": "ワインバー; 一面窗望那珂川水+霓虹夜景; 国体通り春吉橋1分; 詳見餐廳資料",
-     "img": "img/t6o.jpg",
      "ref": {
       "tab": "food",
       "section": 16
@@ -344,8 +299,7 @@
     {
      "time": "23:30",
      "activity": "返酒店 (地鐵渡邊路→天神1站 / 的士)",
-     "remark": "T6O→渡邊路站1站返天神; 末班約23:45-00:10 (出發前Yahoo路線確認); 3人夾的士~¥1,500-2,000都抵",
-     "img": "img/v_street_night.jpg"
+     "remark": "T6O→渡邊路站1站返天神; 末班約23:45-00:10 (出發前Yahoo路線確認); 3人夾的士~¥1,500-2,000都抵"
     }
    ]
   },
@@ -357,7 +311,6 @@
      "time": "08:00",
      "activity": "早餐 (3間餐廳選1): やりうどん/まるうま/はかたや",
      "remark": "【首選】やりうどん (西鐵天神站直結, 食完西鐵去太宰府); 詳見餐廳資料",
-     "img": "img/yariudon.jpg",
      "ref": {
       "tab": "food",
       "section": 7
@@ -366,26 +319,22 @@
     {
      "time": "09:00",
      "activity": "西鐵 天神→太宰府 (~25分鐘)",
-     "remark": "天神大牟田線→二日市轉太宰府線; 車費約¥400",
-     "img": "img/v_nishitetsu.jpg"
+     "remark": "天神大牟田線→二日市轉太宰府線; 車費約¥400"
     },
     {
      "time": "09:30",
      "activity": "太宰府天滿宮 + 表參道商店街 [上晝: 神社+商店街]",
-     "remark": "學問之神總本社; 3月初正係梅花期 (飛梅~6,000株, 2月下旬-3月中開); 表參道梅枝餅即燒即食; 慢逛2小時",
-     "img": "img/v_dazaifu.jpg"
+     "remark": "學問之神總本社; 3月初正係梅花期 (飛梅~6,000株, 2月下旬-3月中開); 表參道梅枝餅即燒即食; 慢逛2小時"
     },
     {
      "time": "11:30",
      "activity": "西鐵返天神 (~25分鐘)",
-     "remark": "",
-     "img": "img/v_nishitetsu.jpg"
+     "remark": ""
     },
     {
      "time": "12:30",
      "activity": "午餐 (3間餐廳選1): Shin-Shin/醉燈屋/Koronagirai",
      "remark": "【首選】Shin-Shin天神 (豚骨拉麵, 逢星期三休 — D4係四OK); 後備: ふくや明太子; 詳見餐廳資料",
-     "img": "img/shinshin.jpg",
      "ref": {
       "tab": "food",
       "section": 8
@@ -394,38 +343,32 @@
     {
      "time": "14:30",
      "activity": "天神地下街 + 大名商店街 [下晝: 購物]",
-     "remark": "天神地下街~10:00-20:00; 大名區潮店/雜貨/二手衫",
-     "img": "img/v_tenjin_u.jpg"
+     "remark": "天神地下街~10:00-20:00; 大名區潮店/雜貨/二手衫"
     },
     {
      "time": "15:30",
      "activity": "警固神社 (天神步行5分鐘)",
-     "remark": "天神商圈內小神社; 順路參拜; 免費",
-     "img": "img/v_kego.jpg"
+     "remark": "天神商圈內小神社; 順路參拜; 免費"
     },
     {
      "time": "16:30",
      "activity": "天神購物 / 大名古着巡禮",
-     "remark": "大名古着屋 (KAPITAL/#FR2/JAM/STÜSSY/BILLY'S等) 集中喺天神西通り後巷; 注意大部20:00關 — 想行要而家行; MEGA Donki 24小時",
-     "img": "img/v_daimyo.jpg"
+     "remark": "大名古着屋 (KAPITAL/#FR2/JAM/STÜSSY/BILLY'S等) 集中喺天神西通り後巷; 注意大部20:00關 — 想行要而家行; MEGA Donki 24小時"
     },
     {
      "time": "17:30",
      "activity": "大名 cafe / 隨意門掃貨",
-     "remark": "夜晚食燒肉, 下晝行耐啲無所謂; 大名咖啡店多",
-     "img": "img/v_cafe.jpg"
+     "remark": "夜晚食燒肉, 下晝行耐啲無所謂; 大名咖啡店多"
     },
     {
      "time": "19:00",
      "activity": "步行去晚餐店 (晚餐區: 大名/赤坂)",
-     "remark": "山翔=赤坂 (天神步行~15分/地鐵1站); 牛乃=博多站3分; 燒肉仁=中洲川端; 全部地鐵1-2站內",
-     "img": "img/v_daimyo.jpg"
+     "remark": "山翔=赤坂 (天神步行~15分/地鐵1站); 牛乃=博多站3分; 燒肉仁=中洲川端; 全部地鐵1-2站內"
     },
     {
      "time": "20:00",
      "activity": "燒肉 (3間餐廳選1): 山翔/牛乃/燒肉仁",
      "remark": "【首選】山翔 (No.19, 赤坂); 牛乃=博多站3分¥8-9k (Tabelog燒肉予約第6位); 詳見餐廳資料",
-     "img": "img/yamasyo.jpg",
      "ref": {
       "tab": "food",
       "section": 9
@@ -434,20 +377,17 @@
     {
      "time": "21:30",
      "activity": "散步: 大名夜遊 (古着櫥窗/酒吧街)",
-     "remark": "大名夜晚先有feel; 店舖20:00閉但街景照行; 山翔(赤坂)步行返大名~15分鐘",
-     "img": "img/v_tenjin_night.jpg"
+     "remark": "大名夜晚先有feel; 店舖20:00閉但街景照行; 山翔(赤坂)步行返大名~15分鐘"
     },
     {
      "time": "22:00",
      "activity": "警固公園→親富孝通り霓虹→天神 [最好景放最後]",
-     "remark": "大名步行去天神10-15分鐘順路; 親富孝通り霓虹招牌街",
-     "img": "img/v_tenjin_night.jpg"
+     "remark": "大名步行去天神10-15分鐘順路; 親富孝通り霓虹招牌街"
     },
     {
      "time": "23:00",
      "activity": "酒吧: 三九酒場けごむす",
      "remark": "飯團+日本酒立飲 (地道立飲吧); 西鉄天神站1分; 詳見餐廳資料",
-     "img": "img/kegomusu.jpg",
      "ref": {
       "tab": "food",
       "section": 16
@@ -456,8 +396,7 @@
     {
      "time": "23:30",
      "activity": "返酒店 (步行)",
-     "remark": "けごむす喺西鉄天神站1分; 酒店步行圈內",
-     "img": "img/v_street_night.jpg"
+     "remark": "けごむす喺西鉄天神站1分; 酒店步行圈內"
     }
    ]
   },
@@ -469,7 +408,6 @@
      "time": "09:00",
      "activity": "早餐 (3間餐廳選1): はかたや/まるうま/長浜家",
      "remark": "【首選】はかたや川端店 (24h, ¥290); 詳見餐廳資料",
-     "img": "img/hakataya.jpg",
      "ref": {
       "tab": "food",
       "section": 10
@@ -478,20 +416,17 @@
     {
      "time": "09:30",
      "activity": "地鐵去唐人町 (~15分鐘)",
-     "remark": "",
-     "img": "img/v_subway.jpg"
+     "remark": ""
     },
     {
      "time": "11:00",
      "activity": "teamLab Forest 福岡 [上晝景點]",
-     "remark": "平日11:00-19:00; 預先官網買飛 (¥2,400起); BOSS E.ZO 5F",
-     "img": "img/v_teamlab.jpg"
+     "remark": "平日11:00-19:00; 預先官網買飛 (¥2,400起); BOSS E.ZO 5F"
     },
     {
      "time": "13:00",
      "activity": "午餐 (3間餐廳選1): TANCA/河太郎/Banban",
      "remark": "【首選】TANCA清川本店 (No.39, 厚切牛舌); 後備: ふくや明太子; 詳見餐廳資料",
-     "img": "img/tanca.jpg",
      "ref": {
       "tab": "food",
       "section": 11
@@ -500,32 +435,27 @@
     {
      "time": "14:00",
      "activity": "大濠公園 + 舞鶴公園/福岡城跡 [下晝: 景+城跡]",
-     "remark": "地行浜→大濠公園地鐵2站; 湖邊快閃30分鐘+福岡城石垣/鴻臚館跡慢慢行~1.5小時",
-     "img": "img/v_ohori.jpg"
+     "remark": "地行浜→大濠公園地鐵2站; 湖邊快閃30分鐘+福岡城石垣/鴻臚館跡慢慢行~1.5小時"
     },
     {
      "time": "16:30",
      "activity": "天神最後衝刺購物",
-     "remark": "自選: 想睇景可以改去福岡塔/百道海濱",
-     "img": "img/v_tenjin.jpg"
+     "remark": "自選: 想睇景可以改去福岡塔/百道海濱"
     },
     {
      "time": "18:00",
      "activity": "天神 → 步行去西中洲 (~10-15分)",
-     "remark": "順那珂川行當睇夜景; 黒家/神樂喺西中洲/天神圈",
-     "img": "img/v_street_night.jpg"
+     "remark": "順那珂川行當睇夜景; 黒家/神樂喺西中洲/天神圈"
     },
     {
      "time": "19:00",
      "activity": "西中洲河畔散步 / 等位",
-     "remark": "晚餐店周邊唞下; 煌=訂位時確認最近站",
-     "img": "img/v_nakasu.jpg"
+     "remark": "晚餐店周邊唞下; 煌=訂位時確認最近站"
     },
     {
      "time": "20:00",
      "activity": "A5壽喜燒 (3間餐廳選1): 黒家/神樂/すき焼き煌",
      "remark": "【首選】黒家西中洲 (A5特選黑毛和牛壽喜燒套餐¥9,900起); 食完21:30柏青哥; 詳見餐廳資料",
-     "img": "img/kuroya.jpg",
      "ref": {
       "tab": "food",
       "section": 12
@@ -534,20 +464,17 @@
     {
      "time": "21:30",
      "activity": "柏青哥初體驗 (今晚代替散步)",
-     "remark": "GOGOアリーナ天神 / BOOM天神 (10:00-22:45); 22:00前入場; 詳見『柏青哥指南』tab",
-     "img": "img/v_pachinko.jpg"
+     "remark": "GOGOアリーナ天神 / BOOM天神 (10:00-22:45); 22:00前入場; 詳見『柏青哥指南』tab"
     },
     {
      "time": "22:30",
      "activity": "柏青哥收爐 → 步行去西中洲",
-     "remark": "店10:00-22:45; 行去西中洲~10分鐘 (順那珂川行, 當睇夜景)",
-     "img": "img/v_pachinko.jpg"
+     "remark": "店10:00-22:45; 行去西中洲~10分鐘 (順那珂川行, 當睇夜景)"
     },
     {
      "time": "23:00",
      "activity": "酒吧: オ・トゥル・ガスコン (西中洲)",
      "remark": "西中洲川沿夜景; 季節フルーツカクテル; 中洲川端站3分; 詳見餐廳資料",
-     "img": "img/gascon.jpg",
      "ref": {
       "tab": "food",
       "section": 16
@@ -556,8 +483,7 @@
     {
      "time": "23:30",
      "activity": "返酒店 (步行~10分鐘)",
-     "remark": "西中洲過橋行返天神/中洲圈; 順那珂川夜景行返去",
-     "img": "img/v_street_night.jpg"
+     "remark": "西中洲過橋行返天神/中洲圈; 順那珂川夜景行返去"
     }
    ]
   },
@@ -569,7 +495,6 @@
      "time": "08:00",
      "activity": "早餐 (3間餐廳選1): やりうどん/コンビニ/はかたや",
      "remark": "【首選】やりうどん (朝早大部分店未開10:00, 烏冬店無休); 詳見餐廳資料",
-     "img": "img/yariudon.jpg",
      "ref": {
       "tab": "food",
       "section": 13
@@ -578,32 +503,27 @@
     {
      "time": "08:30",
      "activity": "退房 + 行李寄存酒店",
-     "remark": "",
-     "img": "img/v_luggage.jpg"
+     "remark": ""
     },
     {
      "time": "09:00",
      "activity": "住吉神社 [最後一間神社]",
-     "remark": "09:00-17:00免費; 全國住吉神社總本社; 博多站10分鐘; 求學業/戀愛運",
-     "img": "img/v_sumiyoshi.jpg"
+     "remark": "09:00-17:00免費; 全國住吉神社總本社; 博多站10分鐘; 求學業/戀愛運"
     },
     {
      "time": "10:00",
      "activity": "天神最後購物",
-     "remark": "唐吉訶德/藥妝/免稅; 地鐵返天神6分鐘",
-     "img": "img/v_tenjin.jpg"
+     "remark": "唐吉訶德/藥妝/免稅; 地鐵返天神6分鐘"
     },
     {
      "time": "11:00",
      "activity": "川端ぜんざい広場 甜品",
-     "remark": "只開五/六/日 11:00-18:00; ¥500; 星期六啱啱好",
-     "img": "img/v_zenzai.jpg"
+     "remark": "只開五/六/日 11:00-18:00; ¥500; 星期六啱啱好"
     },
     {
      "time": "12:00",
      "activity": "午餐 (3間餐廳選1): 無限餃子/山下公園屋台/Umakatai",
      "remark": "【首選】無限餃子中洲川端店 (鐵鍋餃子); 詳見餐廳資料",
-     "img": "img/mugen.jpg",
      "ref": {
       "tab": "food",
       "section": 14
@@ -612,26 +532,22 @@
     {
      "time": "14:00",
      "activity": "攞行李 → 地鐵去機場",
-     "remark": "天神→福岡機場~15分鐘; 預早3小時到",
-     "img": "img/v_subway.jpg"
+     "remark": "天神→福岡機場~15分鐘; 預早3小時到"
     },
     {
      "time": "15:00",
      "activity": "機場 check-in / 買手信",
-     "remark": "ふくや明太子/通りもん機場店",
-     "img": "img/v_airport.jpg"
+     "remark": "ふくや明太子/通りもん機場店"
     },
     {
      "time": "20:00",
      "activity": "UO695 FUK 20:20起飛",
-     "remark": "假設航班 (星期六航班請訂票時確認; 或有20:45→23:45選項)",
-     "img": "img/v_airplane.jpg"
+     "remark": "假設航班 (星期六航班請訂票時確認; 或有20:45→23:45選項)"
     },
     {
      "time": "23:00",
      "activity": "抵達香港 HKG 23:00",
-     "remark": "如係00:00抵達即係7/3凌晨",
-     "img": "img/v_hk.jpg"
+     "remark": "如係00:00抵達即係7/3凌晨"
     }
    ]
   }

@@ -228,6 +228,49 @@ function refTarget(t, ref) {
   return { tabName: tab.name, title: sec.title || tab.name };
 }
 
+/* ---- entry type icons (no web images) ---- */
+const ICONS = {
+  food:   '<path d="M7 3v7a2 2 0 0 0 2 2v9M11 3v7a2 2 0 0 1-2 2M7 3v4M11 3v4" stroke-linecap="round"/><path d="M16 3c-2 1.5-2 4.5 0 6v12" stroke-linecap="round"/>',
+  bar:    '<path d="M5 8h14l-7 7-7-7z" stroke-linejoin="round"/><path d="M12 15v6M9 21h6" stroke-linecap="round"/>',
+  plane:  '<path d="M2 13l20-6-4 12-4-4-4 2 1-4-9 0z" stroke-linejoin="round"/>',
+  train:  '<rect x="5" y="3" width="14" height="14" rx="3"/><path d="M5 11h14M9.5 21l-2-4M14.5 21l2-4" stroke-linecap="round"/><circle cx="9.5" cy="14.5" r="1" fill="currentColor" stroke="none"/><circle cx="14.5" cy="14.5" r="1" fill="currentColor" stroke="none"/>',
+  walk:   '<circle cx="13" cy="4.5" r="2"/><path d="M11 21l1-6-2-2 1-4 3 3h4M12 9l-3 3-3 1M12 15l-2 6" stroke-linecap="round" stroke-linejoin="round"/>',
+  shrine: '<path d="M4 10h16M6 10V8c0-1 1.5-3 6-3s6 2 6 3v2M8 21v-8a4 4 0 0 1 8 0v8M3 21h18" stroke-linecap="round"/>',
+  onsen:  '<path d="M9 9c0-1.5 1-2 1-4M14 9c0-1.5 1-2 1-4" stroke-linecap="round"/><path d="M3 14a9 5 0 0 0 18 0M6 20c1.5 1 3.5 1.5 6 1.5S16.5 21 18 20" stroke-linecap="round"/>',
+  game:   '<rect x="3" y="9" width="18" height="10" rx="2"/><circle cx="16.5" cy="14" r="2.2"/><path d="M7 12v4M5 14h4M10.5 5.5l3 3M13.5 5.5l-3 3" stroke-linecap="round"/>',
+  shop:   '<path d="M6 8l1-4h10l1 4M6 8h12l-1 13H7L6 8z" stroke-linejoin="round"/><path d="M10 12a2 2 0 0 0 4 0" stroke-linecap="round"/>',
+  hotel:  '<path d="M4 18v-5a1 1 0 0 1 1-1h13a2 2 0 0 1 2 2v4M4 18h16" stroke-linecap="round" stroke-linejoin="round"/><circle cx="8.5" cy="9" r="1.6"/>',
+  park:   '<path d="M12 3l5 6-5-1-5 1 5-6zM12 8v9M8 21h8" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 17c-3 0-5-1-5-3M12 17c3 0 5-1 5-3" stroke-linecap="round"/>',
+  cafe:   '<path d="M4 8h13v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V8z" stroke-linejoin="round"/><path d="M17 9h2a2.5 2.5 0 0 1 0 5h-2M7 3v2M10 3v2M13 3v2" stroke-linecap="round"/>',
+  art:    '<rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 18h18M12 18v3M8 21h8" stroke-linecap="round"/><circle cx="9" cy="10" r="1.5"/><path d="M7 15c1-2 3-2 4 0M14 8l3 3-3 3-3-3 3-3z"/>',
+  luggage:'<rect x="6" y="7" width="12" height="14" rx="2"/><path d="M9 7V4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v3M10 11v5M14 11v5" stroke-linecap="round"/>',
+  pin:    '<path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.5"/>',
+};
+function iconFor(e) {
+  const s = ((e.activity || '') + ' ' + (e.remark || ''));
+  const has = (...ws) => ws.some(w => s.includes(w));
+  if (has('酒吧', 'BAR', 'バー', '酒場', 'トロ壱', 'T6O', 'ヤモリ', 'ガスコン', 'けごむす')) return 'bar';
+  if (has('溫泉', 'onsen', '溫泉街')) return 'onsen';
+  if (has('柏青哥', 'pachinko')) return 'game';
+  if (has('神社', '寺', '太宰府', '櫛田', '天滿宮', '東長寺', '聖福寺', '崇福寺')) return 'shrine';
+  if (has('航班', '起飛', '機場', 'UO6', '抵達香港', 'check-in（機場', '寄行李')) return 'plane';
+  if (has('地鐵', '西鐵', '電車', '特急', '由布院之森', '博多站', '去天神', '返博多', '去唐人町', '去薬院', '→天神', '→博多', '→西中洲', '地鐵去')) return 'train';
+  if (has('酒店', 'check-in', '退房', '放低嘢', '寄存')) return has('退房', '寄行李', '拿行李') ? 'luggage' : 'hotel';
+  if (has('柏青哥')) return 'game';
+  if (has('teamLab', '美術', '藝術')) return 'art';
+  if (has('公園', '湖', '金鱗', '大濠', '福岡城')) return 'park';
+  if (has('cafe', 'café', '喫茶', '咖啡')) return 'cafe';
+  if (has('購物', '百貨', '地下街', '手信', '古着', 'ミーナ', '衝刺', '運河城', 'MEGA')) return 'shop';
+  if (has('散步', '步行', '夜景', '慢慢行', '河畔', '夜遊', '自由時間')) return 'walk';
+  if (has('早餐', '午餐', '晚餐', '屋台', '一蘭', '拉麵', 'ラーメン', '鍋', '燒肉', '壽喜燒', '爐端', '餃子', '烏冬', 'うどん', '餐廳', '料理', '牛雜', '水炊', '溫泉蛋', '美食')) return 'food';
+  if (has('行李')) return 'luggage';
+  return 'pin';
+}
+function iconTile(e) {
+  const key = iconFor(e);
+  return `<div class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">${ICONS[key]}</svg></div>`;
+}
+
 /* ---- day view ---- */
 function renderDay(t, st) {
   const idx = Math.min(S.view.idx, t.days.length - 1);
@@ -256,7 +299,7 @@ function renderDay(t, st) {
     const ref = refTarget(t, e.ref);
     html += `<div class="entry">
       <div class="time">${esc(e.time || '')}</div>
-      ${e.img ? `<div class="thumb"><img src="${esc(e.img)}" alt="" loading="lazy" decoding="async"></div>` : `<div class="thumb none"></div>`}
+      ${e.img ? `<div class="thumb"><img src="${esc(e.img)}" alt="" loading="lazy" decoding="async"></div>` : iconTile(e)}
       <div class="body">
         <div class="activity">${linkify(e.activity || '')}</div>
         ${e.remark ? `<div class="remark">${linkify(e.remark)}</div>` : ''}
