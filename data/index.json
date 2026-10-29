@@ -1,0 +1,15 @@
+{
+ "schemaVersion": 1,
+ "currentTrip": "fukuoka2027",
+ "trips": [
+  {
+   "id": "fukuoka2027",
+   "title": "福岡 2027",
+   "subtitle": "3人自由行 · 3月1-6日",
+   "file": "fukuoka2027.json",
+   "startDate": "2027-03-01",
+   "endDate": "2027-03-06",
+   "timezone": "Asia/Tokyo"
+  }
+ ]
+}
